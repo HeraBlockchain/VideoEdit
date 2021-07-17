@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5MV-Hl-Vsa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5A-Nd-fMC">
+                                <rect key="frame" x="161" y="383" width="92" height="30"/>
+                                <state key="normal" title="获取相册权限"/>
+                                <connections>
+                                    <action selector="requestPhotoPrivacy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tsh-Ka-Rsc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DzC-Y0-mUQ">
+                                <rect key="frame" x="153" y="433" width="108" height="30"/>
+                                <state key="normal" title="获取麦克风权限"/>
+                                <connections>
+                                    <action selector="requestMicroPrivacy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dG7-7q-Lv3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pda-oH-acs">
+                                <rect key="frame" x="127" y="700" width="160" height="60"/>
+                                <color key="backgroundColor" red="0.40805182667475792" green="0.75844427587462038" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="C9A-FX-Qt7"/>
+                                    <constraint firstAttribute="width" constant="160" id="qrn-Bd-fbP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="编辑视频">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startEditVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCE-eL-3qy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DzC-Y0-mUQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9da-jl-Tb3"/>
+                            <constraint firstItem="DzC-Y0-mUQ" firstAttribute="top" secondItem="m5A-Nd-fMC" secondAttribute="bottom" constant="20" id="VmG-H6-Vpc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pda-oH-acs" secondAttribute="bottom" constant="102" id="iMf-so-eZa"/>
+                            <constraint firstItem="DzC-Y0-mUQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iiE-3x-bdR"/>
+                            <constraint firstItem="m5A-Nd-fMC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l5y-Pb-iiD"/>
+                            <constraint firstItem="Pda-oH-acs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nLf-hz-U3b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KTk-PC-il8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="599" y="-18"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6ph-bF-XQ6">
+            <objects>
+                <navigationController id="5MV-Hl-Vsa" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mal-tc-Frz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dgM-nX-fzo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qSb-vv-3xd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-261" y="23"/>
+        </scene>
+    </scenes>
+</document>

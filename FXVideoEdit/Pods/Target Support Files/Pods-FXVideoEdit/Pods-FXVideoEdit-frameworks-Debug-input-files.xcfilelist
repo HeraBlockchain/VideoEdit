@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-FXVideoEdit/Pods-FXVideoEdit-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
+${BUILT_PRODUCTS_DIR}/MyLayout/MyLayout.framework
+${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework
+${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework
+${BUILT_PRODUCTS_DIR}/YogaKit/YogaKit.framework

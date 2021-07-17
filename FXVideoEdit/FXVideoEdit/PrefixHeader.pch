@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  FXVideoEdit
+//
+//  Created by xunni zou on 2020/7/15.
+//  Copyright © 2020 xunni zou. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define TRIM_IMAGE_WIDTH 60
+#define LENGTH_TIME_SCALE_MIN 30.0
+#define LENGTH_TIME_SCALE_MAX 600.0
+#define MAIN_VIDEO_SPACE 3
+
+
+//
+#import <AVFoundation/AVFoundation.h>
+#import <UIKit/UIKit.h>
+//
+#import "FXCommon.h"
+#import "FXSizeHelper.h"
+#import "FXVideoManager.h"
+#import <Masonry/Masonry.h>
+#import <QMUIKit/QMUIKit.h>
+#import <SDWebImage/SDWebImage.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+
+#import <YYKit/YYKit.h>
+
+// Include any system framework and library headers here that should be included
+// in all compilation units. You will also need to set the Prefix Header build
+// setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

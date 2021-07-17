@@ -1,0 +1,14 @@
+
+platform :ios, '9.0'
+
+target 'FXVideoEdit' do
+  use_frameworks!
+  inhibit_all_warnings!
+  pod 'Masonry'
+  pod 'YYKit'
+  pod 'SDWebImage'
+  pod 'SVProgressHUD'
+  pod 'MyLayout'
+  pod 'QMUIKit'
+  pod 'YogaKit'
+end
